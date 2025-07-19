@@ -304,3 +304,4 @@ mfpWrap.addEventListener('click', closeOverlay); // Attach to mfpWrap instead of
         });
     });
 });
+

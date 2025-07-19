@@ -1404,3 +1404,52 @@ a {
 #index-gallery {
     margin-top: 0px;
 }
+/* preloader css */
+.preloaderBg {
+    z-index: 1000000000000000000;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+}
+.preloader-wrap {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+.preloader-logo {
+    margin: auto;
+    background: url(/assets/a-images/Dimension-Digital-Logo-3.webp) no-repeat center;
+    background-size: 150px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.preloader-circle {
+    border: 5px solid rgba(137, 210, 86, .2);
+    border-top: 5px solid #110443;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    animation: spin 1.5s ease-in-out infinite;
+    position: absolute;
+    top: 0;
+}
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }

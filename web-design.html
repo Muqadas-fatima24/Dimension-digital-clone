@@ -381,35 +381,31 @@
  <script>
     $(document).ready(function(){
 
-        // ... (Your existing JavaScript for other carousels like #patientCarousel, #productCarousel, #circularCarousel would go here) ...
+        var owlLogos = $("#logosCarousel"); 
 
-
-        // Specific Initialization for the NEW #logosCarousel
-        var owlLogos = $("#logosCarousel"); // Select ONLY the carousel with this ID
-
-        if (owlLogos.length) { // Check if the element actually exists on the page
+        if (owlLogos.length) { 
             owlLogos.owlCarousel({
-                loop: true,         // Allows infinite looping of slides
-                margin: 30,         // Space between logos (adjust as needed)
-                autoplay: true,     // <--- KEY: Autoplay is ON
-                autoplayTimeout: 2000, // Time between slides (3 seconds)
-                autoplayHoverPause: true, // Pause autoplay on hover
-                nav: false,         // <--- KEY: No default navigation buttons
-                dots: false,        // <--- KEY: No pagination dots
+                loop: true,        
+                margin: 30,        
+                autoplay: true,    
+                autoplayTimeout: 2000, 
+                autoplayHoverPause: true,
+                nav: false,      
+                dots: false,     
 
-                items: 4,           // <--- KEY: Displays 4 items at a time on larger screens
-                slideBy: 1,         // Moves 1 item at a time (smoother continuous scroll)
+                items: 4,      
+                slideBy: 1,    
 
-                responsive:{        // Define how many items show on different screen sizes
-                    0:{             // For screens 0px wide and up (e.g., mobile phones)
+                responsive:{        
+                    0:{            
                         items:2,
                         slideBy:1
                     },
-                    480:{           // For screens from 600px to 999px wide (e.g., tablets)
+                    480:{           
                         items:3,
                         slideBy:1
                     },
-                    768:{          // For screens 1000px and wider (e.g., desktops)
+                    768:{    
                         items:4,
                         slideBy:1
                     }
