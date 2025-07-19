@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- head -->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,6 +22,7 @@
 </script>
   <title>Dimension_Digital</title>
 </head>
+<!-- head end -->
 <body>
 
   <!-- header -->
@@ -34,7 +35,7 @@
         <div class="preloader-circle"></div>
         </div>
     </div>
-    <!-- end -->
+    <!-- script of preloader -->
      <script>
     $(window).on('load', function() { // makes sure the whole site is loaded
         $('#preloader').delay(350).fadeOut('fast'); // will fade out the white DIV that covers the website.
@@ -44,6 +45,7 @@
         // animateThings();
     });
      </script>
+     <!-- end of loader -->
     <div class="container-fluid m-0 p-0">
       <!--  -->
       <nav class="navbar navbar-expand-lg p-0 m-0">
@@ -76,7 +78,7 @@
               <div class="ulist d-sm-flex justify-content-sm-center align-items-sm-center">
                 <li class="nav-item dropdown" id="toborder-right">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
+                    aria-expanded="false"  id="services-link">
                     Services
                   </a>
                   <!-- <ul class="dropdown-menu"> -->
@@ -92,9 +94,18 @@
                     <li><a class="dropdown-item" href="social-media.html">Social Media Management</a></li>
 
                   </ul>
+                  <!-- zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz -->
+                  <p class="for-ninty" id="forNintyMenu">
+                       <a class="dropdown-item1" href="videography.html">Vediography</a><br>
+                       <a class="dropdown-item1" href="photography.html">Photography</a><br>
+                      <a class="dropdown-item1" href="design.html">Design</a><br>
+                       <a class="dropdown-item1" href="web-design.html">Web Design</a><br>
+                      <a class="dropdown-item1" href="social-media.html">Social Media Management</a><br>
+                    </p>
+                  
                 </li>
               </div>
-            </ul>
+            </ul> 
 
             <!-- buton in ulist -->
             <div
@@ -109,7 +120,7 @@
     </div>
   </header>
   <!-- header end  -->
-
+<!-- main -->
   <main>
   <div class="container-fluid p-0 m-0">
       <div class="content-vedio header">
@@ -464,26 +475,27 @@
   </div>
   </div>
   </main>
+<!-- main end -->
 
-
+<!-- footer -->
  <footer>
   <div class="container mb-3">
     <div class="row align-items-center">
       <!-- 1 -->
       <div class="col-lg-4 col-md-6 mb-md-0 mb-3">
   <ul class="footer-links d-flex d-lg-block d-md-block flex-column align-items-center align-items-lg-start justify-content-center justify-content-lg-start">
-    <li><a href="videography.php">Videography</a></li>
-    <li><a href="photography.php">Photography</a></li>
-    <li><a href="design.php">Content Creation</a></li>
-    <li><a href="web-design.php">Web Design</a></li>
-    <li><a href="social-media.php">Social Media Management</a></li>
+    <li><a href="videography.html">Videography</a></li>
+    <li><a href="photography.html">Photography</a></li>
+    <li><a href="design.html">Content Creation</a></li>
+    <li><a href="web-design.html">Web Design</a></li>
+    <li><a href="social-media.html">Social Media Management</a></li>
   </ul>
 </div>
 
       <!-- 2 -->
        <div class="col-lg-4 order-first order-lg-2 mb-lg-0 mb-3">
         <div class="conjest">
-                    <a href="index.php">
+                    <a href="index.html">
                         <img src="assets/a-images/Dimension-Digital-Logo-2.webp" alt="">
                     </a>
         </div>
@@ -507,15 +519,16 @@
                 <!-- 4 -->
                  <div class="d-flex justify-content-center justify-content-md-end">
                     <p class="" style="font-size: 18px;">
-                        <a style="color:#0F0342;text-decoration:underline" href="privacy-policy.php">Privacy policy </a>/
-                        <a style="color:#0F0342;text-decoration:underline" href="cookie-policy.php"> Cookie policy </a>/
-                        <a style="color:#0F0342;text-decoration:underline" href="terms-of-use.php">Terms of use</a>
+                        <a style="color:#0F0342;text-decoration:underline" href="privacy.html">Privacy policy </a>/
+                        <a style="color:#0F0342;text-decoration:underline" href="cookie-policy.html"> Cookie policy </a>/
+                        <a style="color:#0F0342;text-decoration:underline" href="terms.html">Terms of use</a>
                     </p>
                 </div>
         </div>
     </div>
   </div>
  </footer>
+ <!-- footer end -->
 
 
 
@@ -738,6 +751,10 @@
         }
     });
 </script>
-  <!-- nnnnnnnnnnnnn -->
+
+
+
+
+
 </body>
 </html>

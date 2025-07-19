@@ -305,3 +305,35 @@ mfpWrap.addEventListener('click', closeOverlay); // Attach to mfpWrap instead of
     });
 });
 
+// for services
+  document.addEventListener('DOMContentLoaded', function () {
+    const servicesLink = document.getElementById('services-link');
+    const forNintyMenu = document.getElementById('forNintyMenu');
+
+    // Make sure it is hidden on load
+    forNintyMenu.style.display = "none";
+
+    servicesLink.addEventListener('click', function (event) {
+      if (window.innerWidth <= 991) {
+        event.preventDefault();
+
+        // Toggle show/hide on click
+        if (forNintyMenu.style.display === "none" || forNintyMenu.style.display === "") {
+          forNintyMenu.style.display = "block";
+        } else {
+          forNintyMenu.style.display = "none";
+        }
+      } else {
+        // On larger screens, keep it hidden
+        forNintyMenu.style.display = "none";
+      }
+    });
+
+    // Optional: auto-hide on window resize above 991px
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 991) {
+        forNintyMenu.style.display = "none";
+      }
+    });
+  });
+

@@ -98,7 +98,7 @@ body{
  {
     border-right: none;
  }
-    .dropdown .dropdown-menu {
+    .dropdown .dropdown-menu { 
         transition: all 0.5s; 
         box-shadow: 0 0.5em 1em rgb(0 0 0 / 45%);
         background-color: white;
@@ -1453,3 +1453,75 @@ a {
             transform: rotate(360deg);
         }
     }
+
+
+/* privacy */
+.elementor-text-editor {
+    color: #0F0342;
+}
+.elementor-text-editor p {
+    font-size: 18px;
+    line-height: 37px;
+}
+a {
+    color:rgb(13, 110, 253);
+}
+
+ol{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+ol{
+    padding-left: 2rem;
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+
+
+/* for-nonty */
+.for-ninty{
+    display:none;
+
+}
+.for-ninty li {
+list-style-type: none;
+    
+}
+.for-ninty li a {
+  text-decoration: none;
+  font-size: 1rem;   
+}
+/* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ */
+
+
+
+
+
+
+
+
+
+
+
+
+.for-ninty {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .for-ninty {
+    display: none !important; /* stays hidden on large screens */
+  }
+}
+
+
+
+
+
+

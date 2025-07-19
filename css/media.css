@@ -21,18 +21,66 @@
     font-weight: 400;
     color: white;
     position: relative;
+    
+}
+ #toborder-right {
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    justify-content: center;
+    align-items: center;
 
 }
-   .dropdown-menu li {
-        opacity: 0;
+#navbar-auto li {
+    display: flex !important;          
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.dropdown .dropdown-menu {
+    display:none;
+}
+.for-ninty{
+
+    display:block;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: none;
+}
+ .for-ninty {
+        display: block;
+        text-align: center;
+        /* font-size: xx-large; */
     }
+     .for-ninty a{
+        font-size: 1rem !important;
+     }
+     #navbar-auto li a {
+    border-right: 0px solid rgba(255, 255, 255, 0.3);
+}
+#forNintyMenu a{
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-name: animate;
+    opacity: 0; 
+    transform-origin: top center;
+}
+
+#forNintyMenu a:first-child { animation-delay: -155ms !important; }
+#forNintyMenu a:nth-child(2) { animation-delay: 0ms !important; }
+#forNintyMenu a:nth-child(3) { animation-delay: 150ms !important; }
+#forNintyMenu a:nth-child(4) { animation-delay: 300ms !important; }
+#forNintyMenu a:nth-child(5) { animation-delay: 450ms !important; }
+
+
      /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TO PRACTICE */
      /* --- ACTIVATE YOUR ANIMATION KEYFRAMES --- */
 
 
 /* --- Dropdown Menu Container Styling --- */
-.dropdown .dropdown-menu {
-    /* width: 2rem; */
+/* .dropdown .dropdown-menu {
+    width: 2rem;
     background: none;
     border: none;
     box-shadow: none;
@@ -49,7 +97,7 @@
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     animation-name: animate;
-    opacity: 0; 
+    opacity: 0; z
     transform-origin: top center;
 }
 
@@ -100,20 +148,21 @@
         height:16rem;
         color: white;
         box-shadow: none;
-    }
+    } */
 
-     /*---------------------------------------------------------------------------------------------------  */
+     /*---------------------------------FOR PRACTICE-----------------------------  */
+
      /* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[for new */
  
- #formobile-version {
+ /* #formobile-version {
     height: 2rem;
     overflow: hidden;
     padding: 0;
     transition: height 0.3s ease;
-    display: none; /* hide by default */
-  }
+   
+  } */
 
-  #formobile-version.expand {
+  /* #formobile-version.expand {
     height: 11rem;
     padding: 0.5rem 1rem;
   }
@@ -135,7 +184,7 @@
     font-size: 1.1rem !important;
     padding: .5rem 1.3rem !important;
     color: #fff;
-}
+} */
 }/* for mobile */
 @media (max-width: 575.98px) {
     .content-vedio{
