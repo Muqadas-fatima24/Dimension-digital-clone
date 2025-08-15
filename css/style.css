@@ -13,7 +13,7 @@
 header{
     /* background:linear-gradient(to right, #140A43 50% ,#637C46); */
       font-family: "Mohave", sans-serif;
-    background: url(/assets/a-images/navbar-bg.png);
+    background: url(../assets/a-images/navbar-bg.png);
     background-size: cover;
     background-position: right;
     position: relative;
@@ -67,7 +67,7 @@ body{
     width: 0%;
     content: "";
     background-color: #c2f267;
-}
+} 
 #header #navbarSupportedContent .nav-item>a:hover:before {
    opacity:1;
     width: 84%;
@@ -234,11 +234,11 @@ background-color:   #F4F3F6;
 .navbar-toggler {
   border: none !important;
   box-shadow: none !important;
-  outline: none !important;
+  outline: none !important; 
   background: transparent; /* optional: remove grey background */
 }
 /*  */
-@keyframes animate {
+/* @keyframes animate {
     0% {
         opacity: 0;
         transform: rotateX(-90deg) translateX(-50px);
@@ -252,7 +252,7 @@ background-color:   #F4F3F6;
         opacity: 1;
         transform: rotateX(0deg) translateX(0px);
     }
-}
+} */
 #navbar-auto li  {
     display: flex !important;
     justify-content: center !important;
@@ -762,7 +762,7 @@ footer .socials-links span {
 }
     
     
-    /* popup */
+    /* popup  FOR CONTACT US*/
 .error-popup {
     position: fixed;
     display: flex;
@@ -771,14 +771,9 @@ footer .socials-links span {
     top: 0;
     left: 0;
     z-index: 10;
-
     width: 100vw;
     height: 100vh;
     background: transparent;
-
-    /* --- ADD THESE LINES --- */
-
-    /* ----------------------- */
 }
 
 .popup-wrap {
@@ -944,7 +939,7 @@ footer .socials-links span {
 /* part4 */
 .take-ur {
     padding: 30px 0;
-    background: url(/assets/a-images/case-header-2.png);
+    background: url(../assets/a-images/case-header-2.png);
     background-size: cover;
     color: white;
      font-family: "Mohave", sans-serif;
@@ -1502,17 +1497,10 @@ list-style-type: none;
 
 
 
-
-
-
-
-
-
-
-
 .for-ninty {
   display: none;
 }
+
 
 @media (min-width: 992px) {
   .for-ninty {

@@ -17,37 +17,34 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Mobile dropdown behavior
-  const servicesLink = document.querySelector('#toborder-right > a');
-  const dropdownMenu = document.querySelector('#formobile-version');
-  const servicesToggle = document.getElementById('services-toggle'); // ensure this exists or replace logic
+//   const servicesLink = document.querySelector('#toborder-right > a');
+//   const dropdownMenu = document.querySelector('#formobile-version');
+//   const servicesToggle = document.getElementById('services-toggle'); // ensure this exists or replace logic
 
-  if (servicesLink && dropdownMenu) {
-    servicesLink.addEventListener('click', function (e) {
-      if (window.innerWidth <= 991) {
-        e.preventDefault();
-        dropdownMenu.classList.toggle('expand');
-        dropdownMenu.classList.toggle('visible');
-      }
-    });
+//   if (servicesLink && dropdownMenu) {
+//     servicesLink.addEventListener('click', function (e) {
+//       if (window.innerWidth <= 991) {
+//         e.preventDefault();
+//         dropdownMenu.classList.toggle('expand');
+//         dropdownMenu.classList.toggle('visible');
+//       }
+//     });
 
-    document.addEventListener('click', function (event) {
-      const target = event.target;
+//     document.addEventListener('click', function (event) {
+//       const target = event.target;
 
-      if (
-        window.innerWidth <= 991 &&
-        !servicesLink.contains(target) &&
-        !dropdownMenu.contains(target)
-      ) {
-        dropdownMenu.classList.remove('expand');
-        dropdownMenu.classList.remove('visible');
-      }
-    });
-  }
+//       if (
+//         window.innerWidth <= 991 &&
+//         !servicesLink.contains(target) &&
+//         !dropdownMenu.contains(target)
+//       ) {
+//         dropdownMenu.classList.remove('expand');
+//         dropdownMenu.classList.remove('visible');
+//       }
+//     });
+//   }
 });
 // [[[[[[[[[[[[[[[]]]]]]]]]]]]]]]
-
-
-
 // form validation
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -219,17 +216,17 @@ document.addEventListener('DOMContentLoaded', function () {
             const firstInvalid = document.querySelector('.invalid, .is-invalid, .invalid-plus');
             if (firstInvalid) {
                 firstInvalid.focus();
-            }
+            } 
         }
     });
 });
 // [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
- 
-    document.addEventListener('DOMContentLoaded', () => {
+//  overlay
+document.addEventListener('DOMContentLoaded', () => { 
     const videoLinks = document.querySelectorAll('.popup-youtube');
     const body = document.body;
 
-    videoLinks.forEach(link => {
+    videoLinks.forEach(link => { 
         link.addEventListener('click', (event) => {
             event.preventDefault();
 
